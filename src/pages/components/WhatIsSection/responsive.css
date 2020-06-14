@@ -3,6 +3,7 @@
     padding: 50px 20px;
     margin: 20px auto;
     position: relative;
+    display: block;
   }
   
   .what-is:before {

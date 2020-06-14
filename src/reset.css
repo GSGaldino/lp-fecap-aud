@@ -12,4 +12,6 @@
 body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   color: var(--primary-color);
+  width: 100%;
+  position: relative;
 }

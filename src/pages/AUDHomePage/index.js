@@ -1,11 +1,11 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, Suspense } from 'react';
 
 import Header from '../components/Header';
 import FormSection from '../components/FormSection';
 import GoalsSection from '../components/GoalsSection';
 import WhyMakeCourseSection from '../components/WhyMakeCourseSection';
 import ContainerDiferenciais from '../components/ContainerDiferenciais';
-import VideoIframe from '../components/VideoIframe';
+//import VideoIframe from '../components/VideoIframe';
 import FAQSection from '../components/FAQSection';
 import MoreFecapSection from '../components/MoreFecapSection';
 import WhatIsSection from '../components/WhatIsSection';
@@ -14,6 +14,8 @@ import Footer from '../components/Footer';
 
 import './styles.css';
 import './responsive.css';
+
+const VideoIframe = React.lazy(() => import('../components/VideoIframe'));
 
 
 export default function AUHomePage(){
@@ -30,7 +32,9 @@ export default function AUHomePage(){
       </div>
 
       <ContainerDiferenciais />
-      <VideoIframe />
+      <Suspense fallback={<p>Carregando vídeo ...</p>}>
+        <VideoIframe />
+      </Suspense>      
       <FAQSection />
       <MoreFecapSection />
       <WhatIsSection />

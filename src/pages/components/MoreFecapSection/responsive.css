@@ -1,11 +1,11 @@
 @media screen and (max-width: 800px){
-  .container-gpu .more-fecap .section {
+  .more-fecap .section {
     display: block;
     padding: 20px;
   }
 
-  .container-gpu .more-fecap .section .container-text,
-  .container-gpu .more-fecap .section .container-img {
+  .more-fecap .section .container-text,
+  .more-fecap .section .container-img {
     width: 100%;
     padding: 10px;
   }

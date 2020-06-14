@@ -1,9 +1,9 @@
 @media screen and (max-width: 800px){
-  .container-gpu .container-diferenciais .diferenciais {
+  .container-diferenciais .diferenciais {
     display: block;
   }
 
-  .container-gpu .container-diferenciais .diferenciais .diferencial {
+  .container-diferenciais .diferenciais .diferencial {
     width: 100%;
     max-width: 100%;
   }
