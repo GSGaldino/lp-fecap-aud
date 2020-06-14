@@ -1,0 +1,20 @@
+.section-goals {
+  margin-top: -350px;
+  width: 100%;
+  position: relative;
+}
+
+.goals {
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+
+.goals:last-child {
+  margin-top: -50px;
+}
+
+.goals .goal {
+  width: 45%;
+}

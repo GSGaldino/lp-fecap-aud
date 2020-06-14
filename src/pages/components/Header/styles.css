@@ -1,0 +1,20 @@
+header.Header {
+  padding: 20px 100px;
+  position: relative;
+} 
+
+header.Header .Header-container {
+  position: relative;
+  width: 100%;
+}
+
+header.Header .Header-container .container-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header.Header .Header-container .container-img img {
+  width: 100px;
+}

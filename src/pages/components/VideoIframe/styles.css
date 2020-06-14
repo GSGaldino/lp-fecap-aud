@@ -1,0 +1,13 @@
+.iframe {
+  margin: 10px auto;
+}
+
+.digital-ambient {
+  text-align: center;
+  width: 100%;
+  color: var(--text-color);
+}
+
+.digital-ambient h2 {
+  color: var(--primary-color);
+}

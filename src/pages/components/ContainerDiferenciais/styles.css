@@ -1,0 +1,16 @@
+.container-diferenciais {
+  text-align: center;
+  padding: 20px 100px;
+  margin: 50px auto 20px auto;
+}
+
+.container-diferenciais .diferenciais {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px auto;
+}
+
+.container-diferenciais .diferenciais .diferencial {
+  width: 25%;
+  max-width: 25%;
+}

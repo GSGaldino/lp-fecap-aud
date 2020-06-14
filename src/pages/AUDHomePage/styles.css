@@ -1,0 +1,19 @@
+.container-action {
+  width: 100%;
+  text-align: center;
+}
+
+.container-action a {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 14px 50px;
+  font-size: 20px;
+  border-radius: 60px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.4s ease;
+}
+
+.container-action a:hover {
+  background: var(--secondary-color);
+}
