@@ -2,7 +2,6 @@ import React, { Fragment, lazy, Suspense } from 'react';
 
 import './styles.css';
 
-//import Iframe from 'react-iframe';
 const Iframe = lazy(() => import('react-iframe'));
 
 export default function VideoIframe() {
