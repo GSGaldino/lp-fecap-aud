@@ -1,10 +1,11 @@
 import React from 'react';
-import HubspotForm from 'react-hubspot-form';
 
 import abedImg from '../../../assets/abed.png';
 
 import './styles.css';
 import './responsive.css';
+
+const HubspotForm = React.lazy(() => import('react-hubspot-form'));
 
 export default function FormSection(){
   return (
