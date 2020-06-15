@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 
 import abedImg from '../../../assets/abed.png';
 
 import './styles.css';
 import './responsive.css';
 
-const HubspotForm = React.lazy(() => import('react-hubspot-form'));
+const HubspotForm = lazy(() => import('react-hubspot-form'));
 
 export default function FormSection(){
   return (
@@ -25,11 +25,13 @@ export default function FormSection(){
         <div className="container-form" id="form">
           <div className="background-form">
           <h3>Quer saber mais informações?</h3>
+          <Suspense fallback={<p>Carregando formulário ...</p>}>
             <HubspotForm 
               portalId="6331207"
               formId="51e56306-d8cc-4376-bde6-e3e96c0228d9"
               loading={<p>Loading form ...</p>}
             />
+          </Suspense>
           </div>
         </div>
       </div>

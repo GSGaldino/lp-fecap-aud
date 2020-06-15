@@ -1,6 +1,7 @@
 import React, { Fragment, Suspense } from 'react';
 
 import Header from '../components/Header';
+import FormSection from '../components/FormSection';
 import GoalsSection from '../components/GoalsSection';
 import WhyMakeCourseSection from '../components/WhyMakeCourseSection';
 import ContainerDiferenciais from '../components/ContainerDiferenciais';
@@ -13,7 +14,6 @@ import Footer from '../components/Footer';
 import './styles.css';
 import './responsive.css';
 
-const FormSection = React.lazy(() => import('../components/FormSection'));
 const VideoIframe = React.lazy(() => import('../components/VideoIframe'));
 
 
@@ -22,9 +22,7 @@ export default function AUHomePage(){
     <Fragment>
 
       <Header />
-      <Suspense fallback={<p>Carregando formulário ...</p>}>
-        <FormSection />
-      </Suspense>
+      <FormSection />
       <GoalsSection />
       <WhyMakeCourseSection />
 
