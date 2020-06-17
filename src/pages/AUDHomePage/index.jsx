@@ -6,7 +6,6 @@ import GoalsSection from '../components/GoalsSection';
 import WhyMakeCourseSection from '../components/WhyMakeCourseSection';
 import ActionButtonSection from '../components/ActionButtonSection';
 import DiferenciaisContainer from '../components/DiferenciaisContainer';
-import IframeSection from '../components/IframeSection';
 import FAQSection from '../components/FAQSection';
 import MoreFecapSection from '../components/MoreFecapSection';
 import WhatIsContainer from '../components/WhatIsContainer';
@@ -18,6 +17,8 @@ import './responsive.css';
 
 
 export default function AUHomePage(){
+  const IframeSection = React.lazy(() => import('../components/IframeSection'));
+
   return (
     <div className="container-aud-homepage">
       <Header />
@@ -26,7 +27,9 @@ export default function AUHomePage(){
       <WhyMakeCourseSection />
       <ActionButtonSection />
       <DiferenciaisContainer />
-      <IframeSection />
+      <React.Suspense fallback={() => <p>Carregando vídeo ...</p>}>
+        <IframeSection />
+      </React.Suspense>
       <FAQSection />
       <MoreFecapSection />
       <WhatIsContainer />

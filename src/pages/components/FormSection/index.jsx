@@ -31,11 +31,11 @@ export default function FormSection(){
         <div className="container-form" id="form">
           <div className="background-form">
             <h3>Quer saber mais informações?</h3>
-            <React.Suspense fallback={() => <p>Loading form ..</p>}>
-              <Hubspotform 
+            <React.Suspense fallback={() => <p>Carregando ... </p>}>
+              <Hubspotform
                 portalId="6331207"
                 formId="e56969ae-90f8-4ce0-9949-96793cb436bd"
-                loading={<p>Loading form ...</p>}
+                loading={<p>Carregando ...</p>}
               />
             </React.Suspense>
           </div>
