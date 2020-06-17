@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Lazyload from 'react-lazy-load';
+
 import fecapImg from '../../../assets/FECAP.jpg';
 import fecap2Img from '../../../assets/FECAP-2.jpg';
 
@@ -16,11 +18,14 @@ export default function MoreFecapSection(){
       <div className="more-fecap">
         <div className="section">
           <div className="container-img">
-            <img
-              src={fecapImg}
-              title="FECAP"
-              alt="FECAP"
-            />
+            <Lazyload>
+              <img
+                src={fecapImg}
+                title="FECAP"
+                alt="FECAP"
+              />
+            </Lazyload>
+            
           </div>
           <div className="container-text">
             <p>Com 116 anos de história, a Fundação Escola de Comércio Álvares Penteado (FECAP) é reconhecida como referência nacional em educação na área de negócios.</p>
@@ -38,11 +43,13 @@ export default function MoreFecapSection(){
           </div>
 
           <div className="container-img">
-            <img
-              src={fecap2Img}
-              title="FECAP"
-              alt="FECAP"
-            />
+            <Lazyload>
+              <img
+                src={fecap2Img}
+                title="FECAP"
+                alt="FECAP"
+              />
+            </Lazyload>
           </div>
         </div>
       </div>
