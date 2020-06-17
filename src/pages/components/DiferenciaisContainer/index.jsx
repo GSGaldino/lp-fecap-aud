@@ -9,11 +9,10 @@ import fourthImg from '../../../assets/beneficios-aos-familiares.png';
 import './styles.css';
 import './responsive.css';
 
-
-export default function ContainerDiferenciais(){
+export default function DiferenciaisContainer(){
   return (
     <div className="container-diferenciais">
-        <h2>Diferenciais FECAP</h2>
+      <h2>Diferenciais FECAP</h2>
         <div className="diferenciais">
           <div className="diferencial">
             <ContainerDiferencial

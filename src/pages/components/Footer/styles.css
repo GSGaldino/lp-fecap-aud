@@ -1,30 +1,22 @@
 .footer {
+  width: 100%;
   display: flex;
   padding: 50px 100px;
   justify-content: space-between;
   background: var(--primary-color);
+  height: 250px;
 }
 
-.footer .img-footer {
-  padding: 20px;
-}
-
-.footer .img-footer img {
-  width: 80%;
-}
-
+.footer .footer-menu,
 .footer .footer-contacts {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
+.footer .footer-menu a,
 .footer .footer-contacts a {
   color: #fff;
-  text-decoration: none;
-  display: block;
-  margin: 10px auto;
-  width: 100%;
 }
 
 .footer .footer-links svg{

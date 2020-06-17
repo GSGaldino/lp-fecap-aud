@@ -12,8 +12,8 @@ export default function ContainerDiferencial(props) {
         title={props.imgTitle} 
       />
 
-    <p><strong>{props.firstText}</strong></p>
-    <p>{props.secondText}</p>
+      <p><strong>{props.firstText}</strong></p>
+      <p>{props.secondText}</p>
     </div>
   )
 }

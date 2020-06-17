@@ -3,31 +3,35 @@
   justify-content: space-around;
   align-items: center;
 }
+
 .more-fecap h2 {
   margin-bottom: 20px;
 }
+
 .more-fecap .section {
   display: flex;
-  justify-content: space-between;
   width: 100%;
   padding: 20px 100px;
 }
+
 .more-fecap .section .container-text {
-  width: 48%;
+  width: 50%;
   color: var(--text-color);
-  padding: 0px;
+  padding: 20px;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
 }
+
 .more-fecap .section .container-text p {
   margin-bottom: 20px;
   font-size: 16px;
-  line-height: 1.7;
 }
+
 .more-fecap .section .container-img {
   width: 50%;
 }
+
 
 .more-fecap .section .container-img img {
   width: 100%;

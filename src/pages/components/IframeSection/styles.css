@@ -1,13 +1,11 @@
-.iframe {
-  margin: 10px auto;
-}
-
 .digital-ambient {
   text-align: center;
   width: 100%;
   color: var(--text-color);
 }
 
-.digital-ambient h2 {
+.digital-ambient h2,
+.digital-ambient p  {
   color: var(--primary-color);
+  margin: 10px auto;
 }
