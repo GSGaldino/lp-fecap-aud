@@ -27,7 +27,7 @@ export default function AUHomePage(){
       <WhyMakeCourseSection />
       <ActionButtonSection />
       <DiferenciaisContainer />
-      <React.Suspense fallback={() => <p>Carregando vídeo ..</p>}>
+      <React.Suspense fallback={() => <p>Carregando vídeo ...</p>}>
         <IframeSection />
       </React.Suspense>
       <FAQSection />
