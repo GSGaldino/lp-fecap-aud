@@ -1,5 +1,4 @@
 import React from 'react';
-import Hubspotform from 'react-hubspot-form';
 
 import abedImg from '../../../assets/abed.png';
 
@@ -8,6 +7,9 @@ import './responsive.css';
 
 
 export default function FormSection(){
+    
+  const Hubspotform = React.lazy(() => import('react-hubspot-form'));
+
   return (
     <div className="section-top">
         <div className="container-text">
@@ -29,11 +31,13 @@ export default function FormSection(){
         <div className="container-form" id="form">
           <div className="background-form">
             <h3>Quer saber mais informações?</h3>
-            <Hubspotform 
-              portalId="6331207"
-              formId="51e56306-d8cc-4376-bde6-e3e96c0228d9"
-              loading={<p>Loading form ...</p>}
-            />
+            <React.Suspense fallback={() => <p>Loading form ..</p>}>
+              <Hubspotform 
+                portalId="6331207"
+                formId="e56969ae-90f8-4ce0-9949-96793cb436bd"
+                loading={<p>Loading form ...</p>}
+              />
+            </React.Suspense>
           </div>
         </div>
       </div>
