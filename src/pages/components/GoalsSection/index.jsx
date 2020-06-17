@@ -26,7 +26,7 @@ export default function GoalsSection(){
               img={dateImg}
               imgText={"Data de início"}
               firstText={"Data de início"}
-              secondText={"Início imediato"}
+              secondText={"22 de Agosto de 2020"}
             />
           </div>
         </div>

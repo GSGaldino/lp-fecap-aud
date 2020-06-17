@@ -9,43 +9,55 @@ import './responsive.css';
 export default function WhyMakeCourseSection() {
   const firstAnswer = () => (
     <Fragment>
-      <p>O estado brasileiro, em todo o seu escopo, oferece cada vez mais complexidades que exigem soluções ágeis e contemporâneas. Questões como acesso à moradia, saneamento, saúde, transporte e outras necessidades humanas não podem esperar, pois todos merecem e necessitam desses serviços.</p>
-      <p>Você, na cadeira de servidor público ou pessoa jurídica que atenda ao primeiro setor, precisa estar preparado para lidar com todos esses desafios, sem perder de vista os processos exigidos dentro do sistema público.</p>
-      <p>Pensando nisso a FECAP reuniu os melhores profissionais do mercado para lhe ajudar a desenvolver as principais práticas de Gestão Pública.</p>
+      <p><strong>Este curso destina-se a:</strong></p>
+      <ul style={{ textAlign: "left" }}>
+        <li>Contábeis;</li>
+        <li>Profissionais de áreas como Administração, Economia, Advocacia, Engenharia, etc;</li>
+        <li>Profissionais no início e estágio médio de atividades administrativas e de contabilidade em empresas ou escritórios de contabilidade, área fiscal, controles internos e de auditoria interna;</li>
+        <li>Profissional iniciante, recém graduado, ou em estágio médio da carreira com pretensões de assumir responsabilidades na área de auditoria ou controles internos, riscos, compliance;</li>
+        <li>Profissionais em cargos iniciais de gestão e liderança, mas também com cargos operacionais como analistas júnior, pleno e sênior.</li>
+      </ul>
     </Fragment>
   )
 
+  const secondAnswer = () => (
+    <React.Fragment>
+      <p>O principal objetivo do curso é a capacitação de profissionais para uma atuação eficaz, eficiente e efetiva na realização dos trabalhos de auditoria interna e de gestão e operacionalização de controles internos.</p>
+      <p>A abordagem do curso inclui a capacitação em processos de compliance, prevenção e combate a fraudes, corrupção e lavagem de dinheiro, Sarbanes-Oxley, reorganização societária, due diligence, governança, compliance na relação com governo e empresas privadas, controles internos de entes públicos, uso de recursos públicos e auditoria do terceiro setor.</p>
+    </React.Fragment>
+  )
+
   const thirdAnswer = () => (
-    <div className="faq-list">
-      <ul>
-        <li> 1 - Direito Administrativo Direito Constitucional e Ética.</li>
-        <li> 2 - Planejamento Orçamentário Governamental.</li>
-        <li> 3 - Planejamento Estratégico Público.</li>
-        <li> 4 - Processos Licitatórios.</li>
-        <li> 5 - Transparência e Governança na Gestão Pública.</li>
-        <li> 6 - Finanças Públicas.</li>
-        </ul>
-      
-        <ul>
-        <li> 7 - Contabilidade Pública.</li>
-        <li> 8 - Sustentabilidade e Desempenho na Gestão Pública.</li>
-        <li> 9 - Gestão de Riscos e Controles Internos.</li>
-        <li> 10 - Governança em Regimes Próprios de Previdência Social.</li>
-        <li> 11 - Liderança e Gestão de Pessoas.</li>
-        <li> 12 - Gestão de Projetos.</li>
-        </ul>
-    </div>
+    <React.Fragment>
+      <p>A grade curricular foi revisada e atualizada com disciplinas estruturadas e oferecidas em módulos para atender as demandas do mercado de trabalho e permitem a interdisciplinaridade dos conteúdos e além de promover, a ampliação da capacitação e do desenvolvimento das habilidades dos alunos com foco nos controles internos e na auditoria interna.</p>
+      <ul style={{ textAlign: "left" }}>
+        <li>Planejamento, Execução e Controle em processos de Auditoria</li>
+        <li>Auditoria Governamental</li>
+        <li>Auditoria Interna Operacional</li>
+        <li>Auditoria de Demonstrações Financeiras</li>
+        <li>Controles Internos e SOX</li>
+        <li>Auditoria no Terceiro Setor e de Uso de Recursos Públicos</li>
+        <li>Riscos, Compliance, Lei Anticorrupção</li>
+        <li>Prevenção de Fraudes e de Lavagem de Dinheiro</li>
+        <li>Auditoria de Instituições Financeiras e Seguradoras</li>
+        <li>Estatística e Amostragem Aplicadas à Auditoria</li>
+        <li>Auditoria de TI e Sistema Integrado de Informações</li>
+        <li>Auditoria em Reorganização Societária e Due Diligence</li>
+        <li>Auditoria Tributária e de Obrigações Acessórias</li>
+        <li>Disciplina Eletiva (TCC ou Soft Skills)</li>
+      </ul>
+    </React.Fragment>
   )
 
   const [list, setList] = useState([
     {
-      question: 'Por que fazer este curso?',
+      question: 'Público-alvo',
       answer: firstAnswer(),
       open: false
     },
     {
       question: 'Objetivo do curso',
-      answer: 'Garantir ao servidor público a excelência em suas atividades diárias que demandam tomadas de decisões, tendo como base aspectos de ética, governança, finanças, contabilidade e orçamento das instituições do primeiro setor.',
+      answer: secondAnswer(),
       open: false
     },
     {

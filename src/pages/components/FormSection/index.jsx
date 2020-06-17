@@ -12,10 +12,10 @@ export default function FormSection(){
     <div className="section-top">
         <div className="container-text">
           <div className="container">
-            <h1>Pós-graduação on-line em
-            Gestão Pública</h1>
-            <p>A pós-graduação em Gestão Pública da FECAP lhe dará as ferramentas necessárias para atuar no setor público com conhecimento profundo dos seus processos e uma qualificação adicional.</p>
-            <p>Com essa pós em Gestão Pública, você terá os meios para aumentar a sua produtividade e fazer a diferença no primeiro setor. Dessa forma, você terá maior possibilidade de evolução no cargo escolhido.</p>
+            <h1>Pós-graduação on-line em Auditoria</h1>
+            <p>A pós-graduação em Auditoria irá capacitar você para dar os próximos passos na sua carreira e conquistar reconhecimento profissional.</p>
+            <p>Com este curso, você terá os conhecimentos necessários para atuar com confiança de um especialista nas suas atividades de auditoria e controle interno.</p>
+            <p>Além disso, aprenderá sobre os principais processos utilizadas no mercado como compliance, governança, Sarbanes-Oxley, due diligence, entre outros.</p>
             <div className="container-logo-abed">
               <img 
                 src={abedImg} 

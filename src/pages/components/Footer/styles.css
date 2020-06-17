@@ -17,6 +17,7 @@
 .footer .footer-menu a,
 .footer .footer-contacts a {
   color: #fff;
+  text-decoration: none;
 }
 
 .footer .footer-links svg{

@@ -20,4 +20,12 @@
     width: 100%;    
   }
 
+  .footer .footer-img {
+    text-align: center;
+  }
+
+  .footer .footer-img img {
+    width: 50%;
+  }
+
 }
